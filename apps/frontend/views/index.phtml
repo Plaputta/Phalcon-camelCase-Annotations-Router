@@ -1,0 +1,27 @@
+<?php
+use Phalcon\Tag as Tag;
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <?php echo Tag::getTitle() ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta name="robots" content="noindex, nofollow"/>
+</head>
+
+<body>
+
+<h1>TestProject</h1>
+<hr/>
+<?php echo $this->getContent(); ?>
+<hr />
+<?php echo Phalcon\Version::get(); ?>
+
+
+</body>
+</html>

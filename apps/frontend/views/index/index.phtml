@@ -1,0 +1,6 @@
+<p><strong>Results in Phalcon 1.2.6:</strong></p>
+<p>This view is located at '/apps/frontend/views/index/index.phtml'</p>
+<p>Try this link: <a href="/awesome-test/super-action">/awesome-test/super-action</a>, it will call action 'mySuperTestAction' in 'MyAwesomeTestController' and load the view '/apps/frontend/views/myAwesomeTest/mySuperTest.phtml'.</p>
+<p>Then try this link: <a href="/awesome-test/forward-test">/awesome-test/forward-test</a>, it will forward to action 'mySuperTestAction' in 'MyAwesomeTestController' and try to load the view '/apps/frontend/views/myAwesomeTest/mySuperTest.phtml' which is <s>inconsistent but</s> <em>finnally consistent :) and</em> matches the behaviour below.</p>
+<p>But if you try this link: <a href="/i-do-not-exist">/i-do-not-exist</a>, it will fall back to action 'pageNotFoundAction' in 'ErrorController' and load the view '/apps/frontend/views/error/pageNotFound.phtml'.</p>
+<p>You can watch the headers 'X-Action' and 'X-Controller' to see what's the output of the 'beforeDispatch' event.</p>
